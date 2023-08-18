@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Flower Shopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-8">
+        <h1 class="text-4xl font-bold text-center">Online Flower Shopping</h1>
+    </header>
+
+    <main>
+        <div class="grid grid-cols-4 gap-2 mt-12  ml-4">
+
+            <!-- First Flower -->
+            <div>
+                <div class="card card-compact w-[300px]  bg-base-100 border-2 border-yellow-600 ">
+                    <figure><img class="w-3/4 rounded-xl mt-3" src="images/Rectangle 4.png" /></figure>
+
+                    <div class="card-body flex items-center justify-center">
+                        <div>
+                            <h2 class="card-title text-center">Flower-1</h2>
+                            <p>Price : $ <span id="flower-1">50</span></p>
+                        </div>
+
+                    </div>
+                    <div class="card-actions">
+                        <button id="buy-btn1" class=" btn btn-success w-full mb-4 text-white">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Flower -->
+            <div>
+                <div class="card card-compact  w-[300px] bg-base-100 border-2 border-yellow-600 ">
+                    <figure><img class="w-3/4 rounded-xl mt-3" src="images/Rectangle 5.png" /></figure>
+
+                    <div class="card-body flex items-center justify-center">
+                        <div>
+                            <h2 class="card-title text-center">Flower-2</h2>
+                            <p>Price : $ <span id="flower-2">90</span></p>
+                        </div>
+
+                    </div>
+                    <div class="card-actions">
+                        <button id="buy-btn2" class="btn btn-success w-full mb-4 text-white">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Flower -->
+            <div>
+                <div class="card card-compact  w-[300px] bg-base-100 border-2 border-yellow-600 ">
+                    <figure><img class="w-3/4 rounded-xl mt-3" src="images/Rectangle 6.png" /></figure>
+
+                    <div class="card-body flex items-center justify-center">
+                        <div>
+                            <h2 class="card-title text-center">Flower-3</h2>
+                            <p>Price : $ <span id="flower-3">170</span></p>
+                        </div>
+
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-success w-full mb-4 text-white" id="buy-btn3">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- total card -->
+            <div class="card card-compact  w-[300px] bg-gray-200  px-4 py-8 border-2 border-yellow-600">
+
+                <div class="card-body flex items-center justify-center">
+                    <div>
+                        <h2 class="card-title font-medium text-2xl ">Flowers Cart</h2>
+                        <div id="calculation-entry">
+
+                        </div>
+                        <p class="text-lg font-semibold mt-4">Total Price: $ <span class="text-xl font-bold"
+                                id="total-price">00</span>
+                        </p>
+                        <p class="text-lg font-semibold mt-2">Discount: <span class="text-xl font-bold"
+                                >30%</span>
+                        </p>
+                        <p class="text-lg font-semibold mt-2">Discount Price : $ <span
+                                class="text-xl font-bold" id="discount-price">00</span></p>
+
+                                <div class="flex items-center justify-end">
+                                    <button class="text-xl font-bold p-2 rounded-xl bg-red-500 mt-24 text-white " id="delete-btn">Delete</button>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/index.js"></script>
+    <script src="js/reusable-function.js"></script>
+    <script src="js/calculation.js"></script>
+    <script src="js/add.js"></script>
+</body>
+
+</html>
