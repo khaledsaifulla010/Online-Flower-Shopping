@@ -29,6 +29,8 @@ document.getElementById('buy-btn3').addEventListener('click',function(){
     updateResult();
     updateDiscountPrice();
 
+   
+
 });
 
 document.getElementById('delete-btn').addEventListener('click',function(){
@@ -39,5 +41,6 @@ document.getElementById('delete-btn').addEventListener('click',function(){
     totalPriceText.innerText = '';
     totalDiscountPrice.innerText = '';
     totalCalculationEntry.innerText = '';
+    console.log(location.href = 'index.html');
 
 });
